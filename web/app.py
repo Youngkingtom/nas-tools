@@ -20,7 +20,7 @@ class FlaskApp:
             self.__ssl_cert = app.get('ssl_cert')
             self.__ssl_key = app.get('ssl_key')
         if not self.__web_port:
-            self.__web_port = 3000
+            self.__web_port = 3500
         self.__app = create_flask_app(config)
 
     def run_service(self):
